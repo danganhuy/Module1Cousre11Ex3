@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 2</title>
+</head>
+<body>
+    <script>
+        let bl = true;
+        while (bl) {
+            let temp = prompt("Vui lòng nhập nhiệt độ hiện tại", "");
+            if (temp > 100) {
+                alert("Quá nóng vui lòng giảm nhiệt độ");
+            }
+            else if (temp < 20) {
+                alert("Quá lạnh vui lòng giảm nhiệt độ");
+            }
+            else {
+                document.write("Nhiệt độ này ổn");
+                bl = false;
+            }
+        }
+    </script>
+</body>
+</html>

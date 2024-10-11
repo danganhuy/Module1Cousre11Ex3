@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 4</title>
+</head>
+<body>
+    <script>
+        let n1 = 0;
+        let n2 = 1;
+        let count = 0;
+        while (true) {
+            let n = n1 + n2;
+            if (n % 5 === 0) {
+                count ++;
+                if (count < 1) {
+                    document.write(`Số đầu tiên trong dãy fibonacci chia hết cho 5 là: ${n}`)
+                    break;
+                }
+            }
+            n1 = n2;
+            n2 = n;
+        }
+    </script>
+</body>
+</html>
